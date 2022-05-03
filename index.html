@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopOng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap"> 
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="grid">
+                <nav class="header__navi">
+                    <ul class="header__navi-list-1">
+                        <li class="header__navi-item header__navi-item-has-qr separate-white">
+                            Vào cửa hàng trên ứng dụng ShopOng
+                            <div class="header__qr">
+                                <img src="./assets/image/qr.png" alt="fail" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-app-link">
+                                        <img src="./assets/image/appstore.png" alt="" class="header__qr-app">
+                                    </a>
+                                    <a href="" class="header__qr-app-link">
+                                        <img src="./assets/image/ggplay.png" alt="" class="header__qr-app">
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navi-item">Kết nối</li>
+                        <a href="" class="header__navi-icon fa-brands fa-facebook"></a>
+                        <a href="" class="header__navi-icon fa-brands fa-instagram"></a>
+                    </ul>
+    
+                    <ul class="header__navi-list-2">
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-icon fa-solid fa-bell"></a>
+                            <a href="" class="header__navi-item-link">Thông báo</a>
+                            <div class="header__noti">
+                                <header class="noti-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="noti-list">
+                                    <li class="noti-item">
+                                        <a href="" class="noti-link">
+                                            <img src="./assets/image/hinh-anh-tien2.jpg" alt="fail" class="noti-img">
+                                            <div class="noti-infor">
+                                                <span class="noti-name">Bạn đã trúng thưởng 1000 tỉ</span>
+                                                <span class="noti-des">Ảo thật đấy</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="noti-item">
+                                        <a href="" class="noti-link">
+                                            <img src="./assets/image/hinh-anh-tien2.jpg" alt="fail" class="noti-img">
+                                            <div class="noti-infor">
+                                                <span class="noti-name">Bạn đã trúng thưởng 500 tỉ</span>
+                                                <span class="noti-des">Ảo thật đấy</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="noti-item">
+                                        <a href="" class="noti-link">
+                                            <img src="./assets/image/hinh-anh-tien2.jpg" alt="fail" class="noti-img">
+                                            <div class="noti-infor">
+                                                <span class="noti-name">Bạn đã trúng thưởng 3000 tỉ</span>
+                                                <span class="noti-des">Ảo thật đấy</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="noti-view-all">
+                                    <a href="" class="noti-view-all-button">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navi-item">
+                            <a href="" class="header__navi-icon fa-solid fa-question"></a>
+                            <a href="" class="header__navi-item-link">Trợ giúp</a>
+                        </li>
+                        <li class="header__navi-item font-strong separate-white">Đăng kí</li>
+                        <li class="header__navi-item font-strong">Đăng nhập</li>
+                       <!--  <li class="header__navi-user">
+                            <img src="./assets/image/user.jfif" alt="fail" class="header__navi-user-img">
+                            <span class="header__navi-user-name">Lê Minh Hải</span>
+
+                            <ul class="header__navi-user-menu">
+                                <li class="header__navi-user-menu-item">
+                                    <a href="">Tài khoản của tôi</a>
+                                </li>
+                                <li class="header__navi-user-menu-item">
+                                    <a href="">Địa chỉ</a>
+                                </li>
+                                <li class="header__navi-user-menu-item">
+                                    <a href="">Đơn mua</a>
+                                </li>
+                                <li class="header__navi-user-menu-item thwart-separate">
+                                    <a href="">Đăng xuất</a>
+                                </li>
+                            </ul>
+                        </li> -->
+                    </ul>
+    
+                </nav>
+             </div>
+             <div class="header__search">
+                <a href="/" class="header__search-logo-link">
+                    <div class="header__search-logo">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>ShopOng</span>
+                     </div>
+                </a>
+
+                 <div class="header__search-input">
+                    <div class="header__search-input-wrap">
+                        <input type="text" class="header__search-input-click" placeholder="Tìm kiếm tên sản phẩm, thương hiệu ...">
+                        <div class="header__search-history">
+                            <h3 class="header__history-heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header__history-list">
+                                <li class="header__history-item">
+                                    <a href="">Mercedes Benz</a>
+                                </li>
+                                <li class="header__history-item">
+                                    <a href="">Ferrari</a>
+                                </li>
+                                <li class="header__history-item">
+                                    <a href="">Audi</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="header__search-input-options">
+                        <span class="header__search-input-option">Trong Shop</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <ul class="header__search-options">
+                            <li class="header__search-option header__search-option--active">
+                                <span>Trong Shop</span>
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                            <li class="header__search-option">
+                                <span>Ngoài Shop</span>
+                                <i class="fa-solid fa-check"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="header__search-button">
+                        <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                    </button>
+                 </div>
+
+                 <div class="header__cart-icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="header__cart-icon-notice">3</span>
+                    <div class="header__cart-icon-list">
+                        <img src="./assets/image/no-cart.png" alt="fail" class="header__cart-img-no-item">
+                        <p class="header__cart-mes-no-item">
+                            Chưa có sản phẩm
+                        </p>
+
+                        <h5 class="header__cart-heading">Sản phẩm đã thêm</h5>
+                        <ul class="header__cart-items">
+                            <li class="header__cart-list-item">
+                                <img src="./assets/image/mercedes.jfif" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Xe Mercedes Benz</h5>
+                                        <div class="header__cart-item-price-quantity">
+                                            <span class="header__cart-item-price">5.000.000.000</span>
+                                            <span class="header__cart-item-mutiply">x</span>
+                                            <span class="header__cart-item-quantity">3</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-descirption">
+                                            Phân loại : Kim cương
+                                        </span>
+                                        <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart-list-item">
+                                <img src="./assets/image/ferrari.jfif" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Xe Ferrari</h5>
+                                        <div class="header__cart-item-price-quantity">
+                                            <span class="header__cart-item-price">7.000.000.000</span>
+                                            <span class="header__cart-item-mutiply">x</span>
+                                            <span class="header__cart-item-quantity">7</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-descirption">
+                                            Phân loại : Kim cương
+                                        </span>
+                                        <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart-list-item">
+                                <img src="./assets/image/Audi.jfif" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Xe Audi</h5>
+                                        <div class="header__cart-item-price-quantity">
+                                            <span class="header__cart-item-price">3.000.000.000</span>
+                                            <span class="header__cart-item-mutiply">x</span>
+                                            <span class="header__cart-item-quantity">9</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-descirption">
+                                            Phân loại : Kim cương
+                                        </span>
+                                        <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart-list-item">
+                                <img src="./assets/image/mercedes.jfif" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Xe Mercedes Benz</h5>
+                                        <div class="header__cart-item-price-quantity">
+                                            <span class="header__cart-item-price">5.000.000.000</span>
+                                            <span class="header__cart-item-mutiply">x</span>
+                                            <span class="header__cart-item-quantity">3</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-descirption">
+                                            Phân loại : Kim cương
+                                        </span>
+                                        <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart-list-item">
+                                <img src="./assets/image/ferrari.jfif" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Xe Ferrari</h5>
+                                        <div class="header__cart-item-price-quantity">
+                                            <span class="header__cart-item-price">7.000.000.000</span>
+                                            <span class="header__cart-item-mutiply">x</span>
+                                            <span class="header__cart-item-quantity">7</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-descirption">
+                                            Phân loại : Kim cương
+                                        </span>
+                                        <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="header__cart-list-item">
+                                <img src="./assets/image/Audi.jfif" alt="" class="header__cart-img">
+                                    <div class="header__cart-item-info">
+                                        <div class="header__cart-item-head">
+                                        <h5 class="header__cart-item-name">Xe Audi</h5>
+                                        <div class="header__cart-item-price-quantity">
+                                            <span class="header__cart-item-price">3.000.000.000</span>
+                                            <span class="header__cart-item-mutiply">x</span>
+                                            <span class="header__cart-item-quantity">9</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="header__cart-item-body">
+                                        <span class="header__cart-item-descirption">
+                                            Phân loại : Kim cương
+                                        </span>
+                                        <span class="header__cart-item-remove">Xoá</span>
+                                    </div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                        <a class="header__cart-view button button-primary">Xem giỏ hàng</a>
+                    </div>
+                 </div>
+             </div>
+        </div>
+        <div class="content">
+            <div class="app">
+                <header class="app__header">
+
+                </header>
+                <div class="app__container">
+                    <div class="grid">
+                        <div class="grid__row app__content">
+                            <div class="grid__column-2">
+                                <nav class="category">
+                                    <h3 class="category__heading">
+                                        <i class="fa-solid fa-list-ul"></i>
+                                        Danh mục
+                                    </h3>
+    
+                                    <ul class="category-list">
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Lamborghini</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Ferrari</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Mercedes Benz</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Audi</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Porsche</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">BMW</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Land Rover</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Bentley</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Aston Martin</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Maserati</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Jaguar</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Porsche</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Bugatti</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Lexus</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Volvo</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Mini Cooper</a>
+                                        </li>
+                                        <li class="category-item">
+                                            <a href="#" class="category-item__link">Rolls-Royce</a>
+                                        </li>                                       
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="grid__column-10">
+                                <div class="home-filter">
+                                    <span class="home-filter-arrange">Sắp xếp theo</span>
+                                    <button class="home-filter-button button button-primary">Phổ biến</button>
+                                    <button class="home-filter-button button">Bán chạy</button>
+                                    <button class="home-filter-button button">Mới nhất</button>
+
+                                    <div class="select-input">
+                                        <span class="select-input-label">Giá</span>
+                                        <i class="select-input-icon fas fa-angle-down"></i>
+                                        <ul class="select-input-list">
+                                            <li class="select-input-item">
+                                                <a href="" class="select-input-link">Giá : thấp đến cao</a>
+                                            </li>
+                                            <li class="select-input-item">
+                                                <a href="" class="select-input-link">Giá : cao đến thấp</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="home-filter__page">
+                                        <span class="home-filter__page-num">
+                                            <span class="home-filter__page-current">1</span>\14
+                                        </span>
+
+                                        <div class="home-filter__page-control">
+                                            <a href="" class="home-filter__page-button home-filter__page-button-disable">
+                                                <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                            </a>
+                                            <a href="" class="home-filter__page-button">
+                                                <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="home-product">
+                                    <div class="grid__row home-product-container">                                     
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://thekrankshaft.files.wordpress.com/2021/05/rollsroycecars_20210528_165527_0.jpg) ;"></div>
+                                                <h4 class="home-product-name">Rolls-Royce Boat Tail</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">28 triệu USD</span>
+                                                    <span class="home-product-price-new">28 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Rolls-Royce</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://autopro8.mediacdn.vn/2021/7/1/bugatti-la-voiture-noire-16251042550891421373214.jpg) ;"></div>
+                                                <h4 class="home-product-name">Bugatti La Voiture Noire</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">18 triệu USD</span>
+                                                    <span class="home-product-price-new">18 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Bugatti</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(http://icdn.dantri.com.vn/zoom/1200_630/2022/03/01/chua-duoc-san-xuat-hang-hiem-bugatti-centodieci-duoc-thoi-gia-toi-14-trieu-do-crop-1646108229695.jpeg) ;"></div>
+                                                <h4 class="home-product-name">Bugatti Centodieci</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">9 triệu USD</span>
+                                                    <span class="home-product-price-new">9 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Bugatti</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://icdn.dantri.com.vn/Ep5fupLKycZaN2NUAZKSnptJpYP4d/Image/2015/07/Maybach-Exelero-9-fb615.jpg) ;"></div>
+                                                <h4 class="home-product-name">Mercedes-Maybach Exelero </h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">8 triệu USD</span>
+                                                    <span class="home-product-price-new">8 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Mercedes Benz</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://gds-storage-prd.s3.amazonaws.com/unified-gallery/200304/2502/3f97adf0/thumbnails/bugatti-divo-2018-3500-3500.jpg) ;"></div>
+                                                <h4 class="home-product-name">Bugatti Divo</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">5,8 triệu USD</span>
+                                                    <span class="home-product-price-new">5,8 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Bugatti</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://media.sketchfab.com/models/13e3590d9cc440f28d03bc02512f37e4/thumbnails/480b4662cd854fb9b2b84ee09141eea0/e11fd04b6f684b1e93aefc8c110d2eff.jpeg) ;"></div>
+                                                <h4 class="home-product-name">Lamborghini Veneno</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">4.5 triệu USD</span>
+                                                    <span class="home-product-price-new">4.5 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Lamborghini</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBauCGC2jHvkNQrlxxH5CJFzg5l21_ODMA8dOewFwOKla1iQzEL_K5VtG0Not4h1Cx-pw&usqp=CAU) ;"></div>
+                                                <h4 class="home-product-name">Bugatti Chiron Super Sport 300+</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">3.9 triệu USD</span>
+                                                    <span class="home-product-price-new">3.9 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Bugatti</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://www.lambodiecast.com/photo/model8861.jpg) ;"></div>
+                                                <h4 class="home-product-name">Lamborghini Sian</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">3.6 triệu USD</span>
+                                                    <span class="home-product-price-new">3.6 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Lamborghini</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://xetaichuyendung.vn/images/userfiles/images/TinTuc/oto/soi-chi-tiet-sieu-xe-bugatti-chiron-pur-sport-gia-gan-4-trieu-usd-8.jpg) ;"></div>
+                                                <h4 class="home-product-name">Bugatti Chiron Pur Sport</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">3.6 triệu USD</span>
+                                                    <span class="home-product-price-new">3.6 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Bugatti</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="grid__column-2in10">
+                                            <a class="home-product-item">
+                                                <div class="home-product-img" style="background-image:url(https://motorsport.com.vn/wp-content/uploads/2021/04/1-53.jpg) ;"></div>
+                                                <h4 class="home-product-name">Pagani Huayra Roadster BC</h4>
+                                                <div class="home-product-price">
+                                                    <span class="home-product-price-old">3.5 triệu USD</span>
+                                                    <span class="home-product-price-new">3.5 triệu USD</span>
+                                                </div>
+                                                <div class="home-product-action">
+                                                    <div class="home-product-like home-product-liked">
+                                                        <i class="home-product-like-empty far fa-heart"></i>
+                                                        <i class="home-product-like-fill fas fa-heart"></i>
+                                                    </div>
+                                                    <div class="home-product-rating">
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="home-product-rating-star fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                        <i class="fas fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="home-product-origin">
+                                                    <span class="home-product-origin-brand">Pagani</span>
+                                                    <span class="home-product-origin-country">Việt Nam</span>
+                                                </div>
+                                                <div class="home-product-favourite">
+                                                    <i class="fa fa-check"></i>
+                                                    <span>Yêu thích</span>
+                                                </div>
+                                                <div class="home-product-sale">
+                                                    <span class="home-product-sale-percent">10%</span>
+                                                    <span class="home-product-sale-label">Giảm</span>
+                                                </div>
+                                            </a>
+                                        </div>                                                        
+                                    </div>
+                                </div>
+                                <ul class="pagination">
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="pagination-item pagination-item-active">
+                                        <a href="" class="pagination-link">1</a>                                       </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">2</a>                                       </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">3</a>                                       </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">4</a>                                       </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">5</a>                                       </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">...</a>                                       </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">15</a>                                       </a>
+                                    </li>
+                                    <li class="pagination-item">
+                                        <a href="" class="pagination-link">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid">
+                <div class="grid__row first-footer">
+                    <div class="grid__column-2p4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">ShopOng Mall</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2p4">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="">Chủ sở hữu</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Điều khoản</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Tuyển dụng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2p4">
+                        <h3 class="footer-heading"></h3>
+
+                    </div>
+                    <div class="grid__column-2p4">
+                        <h3 class="footer-heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                    Youtube
+                                </a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">
+                                    <i class="fa-brands fa-instagram-square"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                    </div>
+                    <div class="grid__column-2p4">
+                        <h3 class="footer-heading">Vào cửa hàng trên ứng dụng</h3>
+                        <div class="footer-download">
+                            <img src="./assets/image/qr.png" alt="fail" class="footer-download-qr">
+                            <div class="footer-download-apps">
+                                <a href=""><img src="./assets/image/appstore.png" alt="fail"></a>
+                                <a href=""><img src="./assets/image/ggplay.png" alt="fail"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__row second-footer">
+                    <div class="grid__full-width">
+                        <ul class="second-footer-heading">
+                            <li class="second-footer-heading-item separate-black">
+                                <a class="second-footer-heading-link" href="">Chính sách bảo mật</a>
+                            </li>
+                            <li class="second-footer-heading-item separate-black">
+                                <a class="second-footer-heading-link" href="">Quy chế hoạt động</a>
+                            </li>
+                            <li class="second-footer-heading-item separate-black">
+                                <a class="second-footer-heading-link" href="">Chính sách vận chuyển</a>
+                            </li>
+                            <li class="second-footer-heading-item ">
+                                <a class="second-footer-heading-link" href="">Chính sách trả hàng và hoàn tiền</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="footer-copyright">Bản quyền thuộc về LMH</p>
+            </div>         
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-body">
+        <div class="auth-form">
+            <div class="auth-form__container">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng kí</h3>
+                    <span class="auth-form__switch-button">Đăng nhập</span>
+                </div>
+    
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Số điện thoại hoặc email">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <div class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với ShopOng về
+                            <a href="" class="auth-form__policy-link">Điều khoản dịch vụ</a> và
+                            <a href="" class="auth-form__policy-link">Chính sách bảo mật</a>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__control">
+                        <button class="button">Trở lại</button>
+                        <button class="button button-primary">Đăng kí</button>
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="auth-form__social">
+                <a href="" class="auth-form__social--facebook button button-with-icon">
+                    <i class="auth-form__social-icon fa-brands fa-facebook-square"></i>
+                    <span class="auth-form__social-title">
+                        Kết nối với Facebook
+                    </span>
+                </a>
+                <a href="" class="auth-form__social--google button button-with-icon">
+                    <i class="auth-form__social-icon fa-brands fa-google"></i>
+                    <span class="auth-form__social-title">
+                        Kết nối với Google
+                    </span>
+                </a>
+            </div>
+            
+        </div>
+        <div class="auth-form">
+            <div class="auth-form__container">
+                <div class="auth-form__header">
+                    <h3 class="auth-form__heading">Đăng nhập</h3>
+                    <span class="auth-form__switch-button">Đăng kí</span>
+                </div>
+    
+                <div class="auth-form__form">
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Số điện thoại hoặc email">
+                    </div>
+                    <div class="auth-form__group">
+                        <input type="text" class="auth-form__input" placeholder="Nhập mật khẩu">
+                    </div>
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link separate-black">Quên mật khẩu</a>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp ?</a>
+                        </div>
+                    </div>
+    
+                    <div class="auth-form__control">
+                        <button class="button">Trở lại</button>
+                        <button class="button button-primary">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>    
+            
+            <div class="auth-form__social">
+                <a href="" class="auth-form__social--facebook button button-with-icon">
+                    <i class="auth-form__social-icon fa-brands fa-facebook-square"></i>
+                    <span class="auth-form__social-title">
+                        Đăng nhập với Facebook
+                    </span>
+                </a>
+                <a href="" class="auth-form__social--google button button-with-icon">
+                    <i class="auth-form__social-icon fa-brands fa-google"></i>
+                    <span class="auth-form__social-title">
+                        Đăng nhập với Google
+                    </span>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</body>
+</html>
